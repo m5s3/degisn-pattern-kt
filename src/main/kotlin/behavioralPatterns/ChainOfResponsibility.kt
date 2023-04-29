@@ -54,8 +54,8 @@ fun main() {
     lowLevelManager.setNextHandler(middleLevelManager)
     middleLevelManager.setNextHandler(highLevelManager)
 
-    lowLevelManager.approve(BankTransaction(amount = 50.0, processCount = 0))
-    lowLevelManager.approve(BankTransaction(amount = 250.0, processCount = 0))
-    lowLevelManager.approve(BankTransaction(amount = 500.0, processCount = 0))
-    lowLevelManager.approve(BankTransaction(amount = 1500.0, processCount = 0))
+    lowLevelManager.approve(BankTransaction(amount = 50.0))
+    lowLevelManager.approve(BankTransaction(amount = 250.0))
+    lowLevelManager.approve(BankTransaction(amount = 500.0))
+    lowLevelManager.approve(BankTransaction(amount = 1500.0))
 }
